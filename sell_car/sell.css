@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-page {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(77, 73, 73, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 60px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: aqua;
+}
+
+h1 {
+  color: rgb(255, 192, 1);
+  text-align: center;
+  font-size: 60px;
+}
+
+#sell-box-1 {
+  width: 380px;
+  height: 450px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(216, 216, 216, 0.3);
+  padding: 10px;
+  margin-left: 380px;
+  margin-top: 80px;
+  overflow: hidden;
+  font-weight: bolder;
+}
+
+#sell-box-2 {
+  width: 380px;
+  height: 420px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(197, 188, 188, 0.3);
+  padding: 10px;
+  margin-right: 380px;
+  margin-top: -500px;
+  overflow: hidden;
+  font-weight: bolder;
+}
+
+.input-field {
+  padding: 5px 0;
+  margin: 2% auto;
+  outline: none;
+  border-radius: 30px;
+  background: transparent;
+  margin-left: 20px;
+}
+
+textarea {
+  background: transparent;
+  border-color: black;
+  margin-left: 10px;
+}
+
+.submit-btn {
+  width: 50%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: center;
+  background: rgb(255, 192, 1);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 192, 1);
+  width: 100%;
+  text-align: center;
+  padding-top: 0;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.full-page {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+#logo {
+  padding-top: 20px;
+  padding-left: 20px;
+  position: absolute;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul form {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  color: aqua;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  /*margin-right: 100px;*/
+  font-size: 60px;
+  color: rgb(255, 192, 1);
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+}
+
+.search-form {
+  width: 480px;
+  height: 680px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(255, 255, 255, 0.678);
+  padding: 10px;
+  overflow: hidden;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(255, 192, 1);
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+#modle {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#condition {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+label {
+  color: brown;
+}
+
+#btn {
+  padding-left: 180px;
+}
+
+.searchbtn {
+  width: 100px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: rgb(255, 192, 1);
+  border: 0;
+  outline: none;
+  top: -25px;
+}
+
+footer {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 192, 1);
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}

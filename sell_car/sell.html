@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Car</title>
+    <link rel="stylesheet" href="sell.css" />
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="../home.php">Home</a>
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <a href="../car_list/c_list.php">Your Car List</a>
+                </ul>
+            </nav>
+        </div>
+        <h1>Post your Car Details</h1>
+
+        <form action="sell.php" method="POST" enctype="multipart/form-data">
+
+            <div id='sell-box-1'>
+                <div class='form'>
+                    <fieldset>
+                        <legend>Vehical Details</legend>
+                            
+                                <label for='brand'>Car Brand</label><br>
+                                <input type='text' name='brand' class='input-field'  required/><br><br>
+            
+                                <label for='model'>Car Model</label><br>
+                                <input type='text' name='model' class='input-field'  required/><br><br>
+            
+                                <label>Select Condition</label>
+                                <select name="dropdown">
+                                    <option value="Brandnew">Brand New</option>
+                                    <option value="Registered">Registered</option>
+                                    <option value="Unregistered">unregistered</option>
+                                </select>
+                                <br><br>
+                                <label for='price'>Price</label><br>
+                                <input type='text' name='price' class='input-field' required/><br><br>
+    
+                       
+                                 <label for='descrip'>Description</label><br>
+                                <textarea name='descrip' rows="4" cols="40" ></textarea><br><br>
+                            
+                    </fieldset>
+                </div>
+            </div>
+    
+            <div id='sell-box-2'>
+                <div class='form'>
+                    <fieldset>
+                        <legend>Vehical Image</legend> 
+                        
+                        
+                        <!--                
+                         <form action='upload.php' method="POST" enctype="multipart/form-data"> 
+                         -->
+                            Select Image to upload:<br>
+                            <input type="file" name="file" ><br>
+
+                            <input type='submit' class='submit-btn' value="Submit" name='upload'>
+
+                            
+                            <br><br><br><br>
+                            <img src="<?= $image ?>" width='300px' heigth='300px'>
+                            <br><br>
+                            <!--
+                            </form>
+                            --> 
+                    </fieldset>
+                </div>
+            </div>
+    
+          
+           
+
+        </form>
+
+            
+           
+
+        
+        
+    </div>
+
+    <footer>      
+        <p>Hyper Car Sales Pvt Ltd</p>
+    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-page {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+h1 {
+  color: rgb(255, 192, 1);
+  text-align: center;
+  font-size: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 50px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: palegoldenrod;
+  font-size: 38px;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgb(82, 80, 80);
+  outline: none;
+  background: transparent;
+}
+
+#reg-box-1 {
+  width: 380px;
+  height: 320px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(196, 196, 196, 0.3);
+  padding: 10px;
+  overflow: hidden;
+}
+
+#reg-box-2 {
+  width: 380px;
+  height: 230px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(196, 196, 196, 0.3);
+  padding: 10px;
+  overflow: hidden;
+}
+
+::placeholder {
+  color: aliceblue;
+}
+
+.check-box {
+  margin: 30px 10px 34px 0;
+}
+
+span {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bolder;
+  bottom: 78px;
+  position: absolute;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: rgb(255, 192, 1);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 192, 1);
+  width: 100%;
+  text-align: center;
+  padding-top: 0;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 0;
+}

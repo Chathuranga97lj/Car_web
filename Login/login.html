@@ -1,0 +1,84 @@
+<!DOCTYPE html>  
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Loging Page</title>
+            <link rel="stylesheet" href="login.css" />
+                
+        </head>
+
+    <body>
+        <div class="full-page">
+            <div class="navbar">
+                <div>
+                    <a href="../home.php">Home</a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <a href="../reg/reg.html">Register</a>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Welcome to Login Page</h1>
+        
+            <div id='login-form'>
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id='btn'></div>
+                        <button
+                        type='button' onclick="user()" class='toggle-btn'>User</button>
+                        <button
+                        type='button' onclick="admin()" class='toggle-btn'>Admin</button>
+                    </div>
+                    <form id='user' class='input-user-login' method="POST" action="logingUser.php">
+                        <input type='email' name="user_mail" class='input-field' placeholder="Email Id" required>
+                        <input type='password' name="user_pass" class='input-field' placeholder="Enter Password" required><br><br><br>
+                        <button type='submit' class='submit-btn'>Log In</button>
+                        
+                    </form>
+
+                    <form id='admin' class='input-admin-login' method="POST" action="logingAdmin.php">
+                        <input type='email' name="admin_mail" class='input-field' placeholder="Email Id" required>
+                        <input type='password' name="admin_pass" class='input-field' placeholder="Enter Password" required><br><br><br>
+                        <button type='submit' class='submit-btn'>Log In</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <h2>New users! Please click Register</h2>
+
+        </div>
+
+        <script>
+
+        
+            var modal = document.getElementById('login-form');
+            document.getElementById('login-form').style.display='block';
+
+            var x = document.getElementById('user');
+            var y = document.getElementById('admin');
+            var z = document.getElementById('btn');
+
+            function admin(){
+                x.style.left = '-400px';
+                y.style.left = '50px';
+                z.style.left = '110px';
+            }
+
+            function user(){
+                x.style.left = '50px';
+                y.style.left = '450px';
+                z.style.left = '0px';
+            }
+        </script>
+    </body>
+
+    <footer>      
+        <p>Hyper Car Sales Pvt Ltd</p>
+
+    </footer>
+
+</html>

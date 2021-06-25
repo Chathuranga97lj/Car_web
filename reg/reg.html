@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="reg.css" />
+
+    <script>
+        function passValidate(){
+
+            // validate passwrod and confrim passwrod
+            var pass = document.getElementById("password").value;
+            var con_pass = document.getElementById("con_password").value;
+
+            // validate check box agreement 
+            var check = document.getElementById("agree").value;
+
+            if(pass != con_pass){
+                alert("Password doen't match !");
+                return false;
+            }else if(document.getElementById("agree").checked){
+                alert("Registration Succsessfuly !")
+                return true;
+            }else{
+                alert("Please Agree our terms and contitions to continue!")
+                return false;
+            }
+        }
+    </script>
+
+</head>
+    
+<body>
+
+    <div class="full-page">
+        <div class="navbar">
+             <div>
+                 <a href="../home.php">Home</a>
+             </div>
+ 
+             <nav>
+                 <ul id="MenuItems">
+                     <a href="../Login/login.html">Login</a>
+                 </ul>
+             </nav>
+        </div>
+        <h1>Register here</h1>
+ 
+         <form action="reg.php" method="POST" onsubmit="return passValidate();">
+
+            <div id="reg-box-1">
+                <div class="register">
+                    <input type='text' name="f_name" placeholder="First name" class="input-field" required>
+                    <input type='text' name="l_name" placeholder="Last name" class="input-field" required>
+                    <input type='text' name="nic" placeholder="NIC" class="input-field" required>
+                    <input type='text' name="city" placeholder="City" class="input-field" required>
+                    <input type='text' name="con_no" placeholder="Contact Number" class="input-field" required>
+                    <input type='email' name="email" placeholder="Email" class="input-field" required>
+                </div>
+            </div>
+    
+            <div id='reg-box-2'>
+                <div class="register">
+                    <input type="password" name="pass" placeholder="Set Password" id ="password" class="input-field" required>
+                    <input type="password" name="con_pass" placeholder="Confirm Password" id="con_password" class="input-field" required>
+                    <input type='checkbox' class='check-box' value="check" id="agree">
+                    <span>I agree to the terms and conditons</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </div>
+            </div>
+
+         </form>  <!-- End of input form -->
+
+
+     </div>    
+
+    <footer>      
+        <p>Hyper Car Sales Pvt Ltd</p> 
+    </footer>
+    
+</body>
+</html>
